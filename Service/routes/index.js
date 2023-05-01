@@ -192,12 +192,12 @@ router.get('/read', async (req,res)=>{
 router.put('/update', async (req,res)=>{
     try{
         const username = req.body.username
-        const newNickName = req.body.nickname
+        const newPassword = req.body.password
         const result = await User.findOneAndUpdate(
             { username: username },
             {
               $set: {
-                nickname: newNickName,
+                password: newPassword,
               }
             },
             { new: true }

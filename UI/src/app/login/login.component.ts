@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     this.loginService.login(formValue.username,formValue.password).subscribe({next: (res) => {
       this.tokenService.storeAccessToken(res.accessToken)
       this.tokenService.storeRefrshToken(res.refreshToken)
-      this.router.navigate(['/'])
+      this.router.navigate(['/home'])
     },error : (err)=>{
       this.message='Wrong username or password!!'
     }})
