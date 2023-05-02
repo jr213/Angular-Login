@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
     this.registerService.register(formValue.username,formValue.password).subscribe({next:() => {
       this.success = true
     },error : (err) =>{
-        this.errMessage= err.error.value;
+        this.errMessage= err.error;
     }})
   }
 
