@@ -7,6 +7,7 @@ const bcrypt = require('bcrypt')
 const registrationCtrl = require('../controllers/registration.controller');
 const loginCtrl = require('../controllers/login.controller');
 const homeCtrl = require('../controllers/home.controller')
+const chartCtrl = require('../controllers/chart.controller')
 const refreshCtrl = require('../controllers/refresh.controller')
 const { isAuthenticate } = require('../middlewares/authenticate');
 const { off } = require('../app');
@@ -15,6 +16,7 @@ const { off } = require('../app');
 router.post('/users/register',registrationCtrl.register)
 router.post('/users/login',loginCtrl.login)
 router.get('/home', isAuthenticate, homeCtrl.home)
+router.get('/chart', isAuthenticate, chartCtrl.chart)
 router.post('/refresh',refreshCtrl.refresh)
 
 //CRUD Operations

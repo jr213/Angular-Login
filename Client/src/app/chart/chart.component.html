@@ -1,0 +1,319 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add Your Distances!
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Club Distance</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="driver" class="form-label">Driver</label>
+            <input type="text" class="form-control" id="driver">
+            <label for="3wood" class="form-label">3 Wood</label>
+            <input type="text" class="form-control" id="3wood">
+            <label for="5wood" class="form-label">5 Wood</label>
+            <input type="text" class="form-control" id="5wood">
+            <label for="4iron" class="form-label">4 Iron</label>
+            <input type="text" class="form-control" id="4iron">
+            <label for="5iron" class="form-label">5 Iron</label>
+            <input type="text" class="form-control" id="5iron">
+            <label for="6iron" class="form-label">6 Iron</label>
+            <input type="text" class="form-control" id="6iron">
+            <label for="7iron" class="form-label">7 Iron</label>
+            <input type="text" class="form-control" id="7iron">
+            <label for="8iron" class="form-label">8 Iron</label>
+            <input type="text" class="form-control" id="8iron">
+            <label for="9iron" class="form-label">9 Iron</label>
+            <input type="text" class="form-control" id="9iron">
+            <label for="pw" class="form-label">PW</label>
+            <input type="text" class="form-control" id="pw">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="user-tab" data-bs-toggle="tab" data-bs-target="#user" type="button" role="tab" aria-controls="user" aria-selected="true">{{userName}}</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tiger-tab" data-bs-toggle="tab" data-bs-target="#tiger" type="button" role="tab" aria-controls="tiger" aria-selected="false">Tiger Woods</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="justin-tab" data-bs-toggle="tab" data-bs-target="#justin" type="button" role="tab" aria-controls="justin" aria-selected="false">Justin Thomas</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="dustin-tab" data-bs-toggle="tab" data-bs-target="#dustin" type="button" role="tab" aria-controls="dustin" aria-selected="false">Dustin Johnson</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="rory-tab" data-bs-toggle="tab" data-bs-target="#rory" type="button" role="tab" aria-controls="rory" aria-selected="false">Rory McIlroy</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab"><table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Club</th>
+            <th scope="col">Avg. Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Driver</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">3 Wood</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Wood</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">4 Iron</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Iron</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">6 Iron</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">7 Iron</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">8 Iron</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">9 Iron</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">PW</th>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+    <div class="tab-pane fade" id="tiger" role="tabpanel" aria-labelledby="tiger-tab"><table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Club</th>
+            <th scope="col">Avg. Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Driver</th>
+            <td>303.6 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">3 Wood</th>
+            <td>275 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Wood</th>
+            <td>255 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">4 Iron</th>
+            <td>225 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Iron</th>
+            <td>210 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">6 Iron</th>
+            <td>195 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">7 Iron</th>
+            <td>180 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">8 Iron</th>
+            <td>165 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">9 Iron</th>
+            <td>150 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">PW</th>
+            <td>135 yds</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+    <div class="tab-pane fade" id="justin" role="tabpanel" aria-labelledby="justin-tab"><table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Club</th>
+            <th scope="col">Avg. Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Driver</th>
+            <td>303.9 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">3 Wood</th>
+            <td>275 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Wood</th>
+            <td>250 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">4 Iron</th>
+            <td>228 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Iron</th>
+            <td>212 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">6 Iron</th>
+            <td>200 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">7 Iron</th>
+            <td>185 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">8 Iron</th>
+            <td>172 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">9 Iron</th>
+            <td>160 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">PW</th>
+            <td>142 yds</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+    <div class="tab-pane fade" id="dustin" role="tabpanel" aria-labelledby="dustin-tab"><table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Club</th>
+            <th scope="col">Avg. Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Driver</th>
+            <td>312.9 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">3 Wood</th>
+            <td>282 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Wood</th>
+            <td>267 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">4 Iron</th>
+            <td>236 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Iron</th>
+            <td>225 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">6 Iron</th>
+            <td>212 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">7 Iron</th>
+            <td>200 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">8 Iron</th>
+            <td>186 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">9 Iron</th>
+            <td>172 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">PW</th>
+            <td>158 yds</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+    <div class="tab-pane fade" id="rory" role="tabpanel" aria-labelledby="rory-tab"><table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Club</th>
+            <th scope="col">Avg. Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Driver</th>
+            <td>319.3 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">3 Wood</th>
+            <td>293 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Wood</th>
+            <td>273 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">4 Iron</th>
+            <td>240 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">5 Iron</th>
+            <td>219 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">6 Iron</th>
+            <td>207 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">7 Iron</th>
+            <td>192 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">8 Iron</th>
+            <td>175 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">9 Iron</th>
+            <td>163 yds</td>
+          </tr>
+          <tr>
+            <th scope="row">PW</th>
+            <td>148 yds</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+  </div>

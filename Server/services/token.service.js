@@ -4,7 +4,7 @@ const refresh_secret = process.env.REFRESH_TOKEN_SECRET
 
 module.exports.getAccessToken = (username) => {
     return new Promise((resolve,reject)=>{
-        jwt.sign({username},access_secret,{expiresIn:60},(err,token)=>{
+        jwt.sign({username},access_secret,{expiresIn:60000},(err,token)=>{
             if(err) reject(err)
             resolve(token)
         })
@@ -13,7 +13,7 @@ module.exports.getAccessToken = (username) => {
 
 module.exports.getRefreshToken = (username) => {
     return new Promise((resolve,reject)=>{
-        jwt.sign({username},refresh_secret,{expiresIn:300},(err,token)=>{
+        jwt.sign({username},refresh_secret,{expiresIn:30000},(err,token)=>{
             if(err) reject(err)
             resolve(token)
         })

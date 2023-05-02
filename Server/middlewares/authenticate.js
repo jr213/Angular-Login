@@ -14,8 +14,8 @@ module.exports.isAuthenticate = async (req,res,next) =>{
         }
     }catch(err){
         console.log(err.message)
-        if(err instanceof jwt.TokenExpiredError)
-            res.status(403).send(err)
-        res.status(500).send('Internal Server Error!!')
+        // if(err instanceof jwt.TokenExpiredError)
+        //     res.status(403).send(err)
+        // res.status(500).send('Internal Server Error!!')
     }
 }
